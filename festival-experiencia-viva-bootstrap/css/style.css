@@ -1,0 +1,27 @@
+body {
+    min-height: 100vh;
+}
+
+.table th,
+.table td {
+    vertical-align: middle;
+}
+
+.page-title {
+    gap: 1rem;
+}
+
+.card {
+    border: 0;
+}
+
+@media (max-width: 575.98px) {
+    .page-title {
+        align-items: flex-start !important;
+        flex-direction: column;
+    }
+
+    .page-title .btn {
+        width: 100%;
+    }
+}
