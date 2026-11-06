@@ -3,6 +3,10 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use App\Models\Inscricao;
+use Illuminate\Database\Eloquent\Relations\HasMany;
+
+
 
 class Atividade extends Model
 {
@@ -15,7 +19,7 @@ class Atividade extends Model
         'capacidade'=> 'integer',
     ];
 
-    public function Inscricao():HasMany{
-        return $this->HasMany(Inscricao::class);
+    public function inscricoes():HasMany{
+        return $this->hasMany(Inscricao::class);
 }
 }
